@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bueorm</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Bueorm Logo">
+            <span>Bueorm</span>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Models</a>
+            <a href="#">Donations</a>
+            <a href="#">News</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="model-icon.svg" alt="Model Image">
+                <div class="hero-text">
+                    <h1>Unlock the Power of AI</h1>
+                    <p>Explore our cutting-edge AI models and contribute to their development.</p>
+                    <button onclick="window.open('https://example.com')">Download Model</button>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <p>Support our mission to advance AI technology and make it accessible to all.</p>
+            <button onclick="window.open('https://example.com/donate')">Donate</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bueorm. All rights reserved.</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#" onclick="openPrivacyPolicy()">Privacy Policy</a>
+        </nav>
+    </footer>
+    <div id="privacy-policy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePrivacyPolicy()">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p>Your privacy policy text goes here.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
