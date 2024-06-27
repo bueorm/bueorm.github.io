@@ -1,55 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bueorm</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Bueorm - Transformando la IA</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: #080c24;
+            padding: 15px 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+        .main-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .main-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .main-section-content {
+            width: calc(100% - 450px);
+            padding: 0 20px;
+        }
+        .download-btn, .donate-btn {
+            background-color: #080c24;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover, .donate-btn:hover {
+            background-color: #10173d;
+        }
+        .mission-section {
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+        .footer {
+            background-color: #080c24;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Bueorm Logo">
-            <span>Bueorm</span>
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Models</a>
-            <a href="#">Donations</a>
-            <a href="#">News</a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <img src="model-icon.svg" alt="Model Image">
-                <div class="hero-text">
-                    <h1>Unlock the Power of AI</h1>
-                    <p>Explore our cutting-edge AI models and contribute to their development.</p>
-                    <button onclick="window.open('https://example.com')">Download Model</button>
-                </div>
+    <div class="container">
+        <header class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo de Bueorm">
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="https://ejemplo.com/models" target="_blank">Modelos</a>
+                <a href="https://ejemplo.com/donaciones" target="_blank">Donaciones</a>
+                <a href="#news">Noticias</a>
+            </nav>
+        </header>
+
+        <section class="main-section">
+            <img src="model-icon.svg" alt="Último modelo de Bueorm">
+            <div class="main-section-content">
+                <h1>NUESTRO MODELO MAS POTENTE</h1>
+                <p>Descubre el poder de la innovación con nuestro modelo más reciente y potente: ALM-1. Diseñado para avanzar en nuestras capacidades y mejorar en nuestro ambito tegnologico especializado en inteligencia artificial potenciada por Transformers.</p>
+                <button class="download-btn" onclick="window.location.href='https://ejemplo.com/descargar'">Descargar</button>
             </div>
         </section>
-        <section class="content">
-            <p>Support our mission to advance AI technology and make it accessible to all.</p>
-            <button onclick="window.open('https://example.com/donate')">Donate</button>
+
+        <section class="mission-section">
+            <h2>Nuestra Misión</h2>
+            <p>En Bueorm, nos dedicamos a impulsar el progreso tecnológico y científico. Nuestra misión es crear modelos innovadores que transformen la forma en que interactuamos con la tecnología. Trabajamos incansablemente para desarrollar soluciones que mejoren la vida de las personas y contribuyan a un futuro más brillante, aunque nuestros modelos a dia de hoy no sean muy potentes ni eficazes esperamos a largo plazo tener un modelo potente que haga pelea a las grandes desarrolladoras.</p>
+            <p>Dependemos del apoyo de personas como tú para continuar nuestro trabajo y hacer del mundo un lugar mejor. Tu contribución nos permite seguir innovando y creando tecnologías que marcan la diferencia.</p>
+            <button class="donate-btn" onclick="window.location.href='https://ejemplo.com/donar'">Donar</button>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Bueorm. All rights reserved.</p>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#" onclick="openPrivacyPolicy()">Privacy Policy</a>
-        </nav>
-    </footer>
-    <div id="privacy-policy-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closePrivacyPolicy()">&times;</span>
-            <h2>Privacy Policy</h2>
-            <p>Your privacy policy text goes here.</p>
-        </div>
+
+        <footer class="footer">
+            <p>© 2024 Bueorm. Todos los derechos reservados.</p>
+        </footer>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
